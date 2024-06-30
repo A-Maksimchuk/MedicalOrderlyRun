@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using MedicalOrderlyRun.Infrastructure.SceneManagement;
+using UnityEngine;
 using VContainer.Unity;
 
 namespace MedicalOrderlyRun.Infrastructure
@@ -8,6 +9,8 @@ namespace MedicalOrderlyRun.Infrastructure
         public void Start()
         {
             Debug.Log("Game start");
+            var sceneManager = new SceneManager();
+            sceneManager.LoadMainScene();
         }
     }
 }
